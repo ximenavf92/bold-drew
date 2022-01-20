@@ -1,0 +1,179 @@
+:root {
+    --utsa-blue: #0c2340;
+    --utsa-web-orange: #d3430d; /* use web-orange when needing to pass contrast  with white text */
+    --utsa-brand-orange: #f15a22;
+    --white: #ffffff;
+    --secondaryColor: var(--utsa-brand-orange);
+    --primaryColor: var(--utsa-blue);
+    --secondaryColorA11y: var(--utsa-web-orange); /* A11y orange just for text*/
+    --reverseText: --white;
+    --black: #000000;
+    --utsa-steel-blue: #495a70;
+    --utsa-steel-blue-light: #dbdee3;
+    --utsa-blue-light: #eef4fc;
+    --utsa-blue-med: #eaf1fb;
+    --utsa-gray: #dadde2;
+    --utsa-gray-light: #f1f2f4;
+    --dark-gray: #a9a9a9;
+    --medium-gray: #939799;
+    --light-gray: #d3d3d3;
+
+    /* Properties /*
+    --lineThickness: 5px;
+    --letterSpacing: 0.2em;
+    --boxShadow-dark: 2px 2px 6px hsla(212, 68%, 15%, 0.25);
+    --overlayBg: rgba(0, 0, 0, 0.25);
+
+    /* Fonts */
+    --headingFont: ff-meta-web-pro, open-sans, Arial, Verdana, sans-serif;
+    --bodyFont: open-sans, Arial, Verdana, sans-serif;
+    --brandFont: 'Bree', sans-serif;
+}
+
+body {
+    color: var(--white);
+    background-color: var(--primaryColor);
+    font-family: var(--bodyFont);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header.intro-header {
+    background-color: var(--secondaryColorA11y);
+    padding: 2rem;
+    /* color: var(--primaryColor); */
+}
+
+main { 
+    margin: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--brandFont);
+    font-weight: 800;
+}
+
+.intro-header,
+.bold-title {
+    background-image: url('assets/bold-bg-sm.png');
+}
+
+.intro-header {
+    width: 100%;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.titles {
+    text-align: center;
+}
+
+.titles h1 {
+    font-size: 5.25rem;
+    line-height: 1;
+    margin: 0 0 .5rem 0;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+.titles p {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 1rem 3rem;
+}
+
+.intro-header img {
+    margin: 0 auto;
+    justify-self: center;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: solid 8px var(--primaryColor);
+}
+
+.bold-title-container {
+    padding: 2rem 2rem 2rem 5rem;
+}
+
+h2.bold-title {
+    margin: 0;
+}
+
+.bold-title em {
+    font-size: 6rem;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #fff;
+    -webkit-text-fill-color: #0c2440;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    color: #fff;
+    font-family: 'Bree', sans-serif;
+    font-weight: 800;
+    float: left;
+    margin: auto;
+    text-align: center;
+    font-style: normal;
+    line-height: 1;
+    
+}
+
+span.bold-subtitle {
+    font-weight: 800;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Bree', sans-serif;
+    float: left;
+    clear: both;
+    margin: -2.75rem 3rem 5rem 3rem;
+    line-height: 0.85;
+    color: var(--secondaryColor);
+}
+
+.logo {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1200px) {
+    main {
+        margin: 8rem 10rem 5rem;
+    }
+
+    .titles {
+        text-align: left;
+    }
+    
+    .intro-header {
+        flex-direction: row;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .intro-header img {
+        margin: 0;
+    }
+
+    .titles p { 
+        padding: .25rem 0 0 .5rem;
+    }
+
+    .logo {
+        margin-top: 4rem;
+    }
+}
