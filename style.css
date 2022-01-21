@@ -138,7 +138,7 @@ span.bold-subtitle {
     font-family: 'Bree', sans-serif;
     float: left;
     clear: both;
-    margin: -2.75rem 3rem 5rem 3rem;
+    margin: -1.75rem 3rem 5rem 3rem;
     line-height: 0.85;
     color: var(--secondaryColor);
 }
